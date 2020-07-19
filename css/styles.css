@@ -29,6 +29,11 @@ html {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   background-color: var(--body-color);
   color: var(--main-text-color);
@@ -40,9 +45,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -248,7 +254,11 @@ body {
 }
 .team-list-item {
   background-color: var(--body-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .team-name {
   display: block;
   padding-top: 30px;
@@ -288,13 +298,15 @@ body {
   padding-top: 50px;
 }
 .klients-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding-top: 10.28px;
-  text-align: center;
+  /*padding-top: 10.28px;
+  text-align: center;*/
 }
 .klients-button:hover,
 .klients-button:focus {
@@ -315,7 +327,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 footer .logo-name {
@@ -403,6 +415,9 @@ footer .logo-name {
 .gallery-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
+.gallery-picture {
+  display: block;
+}
 .gallery-hidden-text {
   font-weight: 400;
   font-size: 18px;
@@ -412,10 +427,14 @@ footer .logo-name {
   color: var(--contrast-text-color);
 }
 .description {
+  display: block;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .gallery-title {
   font-weight: 400;
