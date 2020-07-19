@@ -312,13 +312,12 @@ body {
 .klients-button:focus {
   border: 1px solid #2196f3;
 }
-/*.klients-logo {
+.klients-logo {
   display: block;
-  margin-top: 10.26px;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-}*/
+  width: 170px;
+  height: 90px;
+  padding: 20px;
+}
 footer {
   background-color: var(--dark-body-color);
   padding-top: 60px;
